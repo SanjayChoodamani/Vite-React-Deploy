@@ -62,8 +62,8 @@ git commit -m "Initial Vite project setup"
 Connect your local repository:
 
 ```bash
-git remote add origin git@github.com:YOUR_USERNAME/react-deploy-demo.git
 git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/react-deploy-demo.git
 git push -u origin main
 ```
 
@@ -119,7 +119,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
