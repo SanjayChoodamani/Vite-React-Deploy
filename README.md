@@ -202,17 +202,6 @@ git push
 
 ## FAQ
 
-- **How to setup a custom domain?**
-  Follow the instructions at [Vite Deploy Demo Custom Domain](https://github.com/sitek94/vite-deploy-demo-custom-domain)
-
-- **What if I'm using React Router?**
-  For client-side routing to work, you'll need to configure your router to use your repository name as the basename:
-  ```jsx
-  <BrowserRouter basename="/react-deploy-demo">
-    {/* Your routes */}
-  </BrowserRouter>
-  ```
-
 - **How do I update my deployed site?**
   Simply push changes to your main branch, and the GitHub Actions workflow will automatically build and deploy the updated version.
 
