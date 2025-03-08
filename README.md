@@ -139,6 +139,8 @@ git push
 
 ### 4. Configuring GitHub Actions Permissions
 
+![GitHub Actions Permissions Settings](./src/assets/permission.png)
+
 1. Go to your GitHub repository
 2. Navigate to **Settings > Actions > General**
 3. Scroll down to "Workflow permissions"
@@ -149,6 +151,8 @@ This is an essential step as the deployment workflow needs to write to your repo
 
 If your initial deployment failed, go to the Actions tab, find the failed workflow, and click **Re-run failed jobs**.
 
+![Github Re-run Failed Jobs](./src/assets/rerun.png)
+
 ### 5. Setting up GitHub Pages
 
 After the workflow runs successfully:
@@ -157,6 +161,8 @@ After the workflow runs successfully:
 2. Set **Source** to "Deploy from a branch"
 3. Select the `gh-pages` branch and the `/ (root)` folder
 4. Click **Save**
+
+![Set source to deploy the website](./src/assets/pages.png)
 
 GitHub will now build and deploy your site. You'll see a message with the URL where your site is published (typically `https://YOUR_USERNAME.github.io/react-deploy-demo/`).
 
